@@ -4,7 +4,7 @@ pipeline {
     parameters {
         booleanParam(name: "PRODUCTION", defaultValue: false, description: "For triggering Packahe")
         string(name: "AUTHOR", defaultValue: "Rod", trim: true, description: "Code Author")
-        choice(name: "TARGET", choices: ["production", "devel-opment", "testing"], description: "Build Target")
+        choice(name: "TARGET", choices: ["production", "development", "testing"], description: "Build Target")
     }
     stages {
         stage("Build") {
