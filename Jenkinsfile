@@ -10,7 +10,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Build stage."
-                echo "This is $params.TARGET build authored by $params.AUTHOR"
+                echo "This is ${params.TARGET} build authored by ${params.AUTHOR}"
             }
         }
         stage("Test") {
